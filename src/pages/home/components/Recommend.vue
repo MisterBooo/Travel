@@ -19,25 +19,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_150x150_14d54b9c.jpg',
-        title: '长隆野生动物世界',
-        desc: '长隆野生动物世界真好玩'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1707/ab/abb70c851caaa6d8a3.img.jpg_150x150_428d0c72.jpg',
-        title: '长隆水上乐园',
-        desc: '长隆野生动物世界真好玩'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_150x150_14d54b9c.jpg',
-        title: '长隆野生动物世界',
-        desc: '长隆野生动物世界真好玩'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
