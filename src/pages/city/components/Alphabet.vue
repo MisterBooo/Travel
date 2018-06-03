@@ -42,6 +42,7 @@ export default {
   },
   methods: {
     handleLetterClick (e) {
+      console.log(e)
       this.$emit('change', e.target.innerText)
     },
     handleTouchStart () {
