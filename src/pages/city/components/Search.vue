@@ -5,7 +5,7 @@
     </div>
     <div class="search-content" ref="search" v-show="keyword">
       <ul>
-        <li v-for="item of list" :key="item.id" class="search-item border-bottom">{{item.name}}</li>
+        <li v-for="item of list" :key="item.id" class="search-item border-bottom" @click="handleItemClick(item.name)">{{item.name}}</li>
         <li class="search-item border-bottom" v-show="hasNoData">没有找到匹配数据</li>
       </ul>
     </div>
@@ -29,6 +29,13 @@ export default {
   computed: {
     hasNoData () {
       return !this.list.length
+    }
+  },
+  methods: {
+    handleItemClick (name) {
+      this.$store.commit('changeCity', name)
+      this.keyword = ''
+      this.$router.push('./')
     }
   },
   watch: {
