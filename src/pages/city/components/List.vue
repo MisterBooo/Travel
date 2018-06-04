@@ -20,7 +20,7 @@
         <div class="area" v-for="(item,key) of cities" :key="key" :ref="key" >
           <div class="title border-topbottom">{{key}}</div>
           <div class="item-list" v-for="innerItem of item" :key="innerItem.id" >
-            <div class="item border-bottom"  :key="innerItem.name"  >{{innerItem.name}}</div>
+            <div class="item border-bottom"  :key="innerItem.name" @click="handleCityClick(innerItem.name)"  >{{innerItem.name}}</div>
           </div>
         </div>
       </div>
@@ -37,9 +37,9 @@ export default {
     letter: String
   },
   methods: {
-    handleCityClick (res) {
-      alert(res)
-      // console.log(city)
+    handleCityClick (city) {
+      this.$store.dispatch('changeCity', city)
+      this.$router.push('./')
     }
   },
   mounted () {

@@ -41,3 +41,10 @@
 
 ```
 ![](http://oriq21dog.bkt.clouddn.com/bloc/2018-06-01-QQ20180601-093059.png)
+
+### 6.click突然失效或click点击区域范围变化
+```
+1. 检查代码  
+2. 切换几次浏览器中模拟器的大小
+```
+![](http://oriq21dog.bkt.clouddn.com/bloc/2018-06-03-QQ20180604-071041%402x.png)
