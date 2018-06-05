@@ -56,12 +56,14 @@ export default {
   mounted () {
     this.lastCity = this.city
     this.getHomeInfo()
+    console.log('home mounted')
   },
   activated () {
     if (this.lastCity !== this.city) {
       this.lastCity = this.city
       this.getHomeInfo()
     }
+    console.log('home activated')
   }
 }
 </script>

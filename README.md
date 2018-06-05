@@ -48,3 +48,13 @@
 2. 切换几次浏览器中模拟器的大小
 ```
 ![](http://oriq21dog.bkt.clouddn.com/bloc/2018-06-03-QQ20180604-071041%402x.png)
+
+### 7.Detail页面网络数据只请求一次
+![](http://oriq21dog.bkt.clouddn.com/bloc/2018-06-05-QQ20180605-114315%402x.png)
+
+```
+在App.vue的keep-alive中添加exclude="Detail"
+```
+
+
+![](http://oriq21dog.bkt.clouddn.com/bloc/2018-06-05-QQ20180605-114522.png)
